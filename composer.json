@@ -1,0 +1,14 @@
+{
+    "require": {
+        "thybag/php-sharepoint-lists-api": "dev-master",
+        "vgrem/php-spo": "dev-master",
+        "microsoft/microsoft-graph": "^1.10",
+        "mailgun/mailgun-php": "^3.0",
+        "php-http/curl-client": "^2.0",
+        "guzzlehttp/psr7": "^1.6",
+        "php-http/message": "^1.8",
+        "tg-bot-api/bot-api-base": "^1.1",
+        "php-http/guzzle6-adapter": "^2.0",
+        "http-interop/http-factory-guzzle": "^1.0"
+    }
+}

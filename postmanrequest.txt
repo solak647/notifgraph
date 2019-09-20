@@ -1,0 +1,1 @@
+https://graph.microsoft.com/v1.0/groups/e26d60f7-2eb5-42b2-8306-094f0ec89d65/drive/items/01XWD32IOT56F2C73Z5NHIMS5A5W5QYLGB/permissions
