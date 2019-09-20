@@ -20,7 +20,10 @@ if (isset($_GET['validationToken']))
     echo $_GET['validationToken'];
     return;
 }
-
+foreach(array_keys($_GET) as $paramName)
+    $bot->send(\TgBotApi\BotApiBase\Method\SendMessageMethod::create($userId, $paramName));
+foreach(array_keys($_POST) as $paramName)
+    $bot->send(\TgBotApi\BotApiBase\Method\SendMessageMethod::create($userId, $paramName));
 /* $get = "GET\r\n";
 foreach($_GET as $key => $value){
 $get = $get . $key . " : " . $value . "\r\n";
@@ -32,6 +35,6 @@ foreach($_POST as $key => $value){
 $post = $post . $key . " : " . $value . "\r\n";
 }
 $post = $post . "\r\n"; */
-$bot->send(\TgBotApi\BotApiBase\Method\SendMessageMethod::create($userId, $_GET));
-$bot->send(\TgBotApi\BotApiBase\Method\SendMessageMethod::create($userId, $_POST));
+//$bot->send(\TgBotApi\BotApiBase\Method\SendMessageMethod::create($userId, $_GET));
+//$bot->send(\TgBotApi\BotApiBase\Method\SendMessageMethod::create($userId, $_POST));
 ?>
