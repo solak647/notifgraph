@@ -20,6 +20,7 @@ if (isset($_GET['validationToken']))
     echo $_GET['validationToken'];
     return;
 }
+$bot->send(\TgBotApi\BotApiBase\Method\SendMessageMethod::create($userId, "test"));
 foreach(array_keys($_GET) as $paramName)
     $bot->send(\TgBotApi\BotApiBase\Method\SendMessageMethod::create($userId, $paramName));
 foreach(array_keys($_POST) as $paramName)
